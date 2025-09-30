@@ -1,0 +1,68 @@
+# Data files (large, sensitive, or excluded)
+raw_files/
+parquet_files/
+*.csv
+*.parquet
+
+# Large output files
+output/processed_data/
+output/figures/*.png
+output/figures/*.jpg
+
+# Keep structure but not large files
+!output/.gitkeep
+!output/figures/.gitkeep
+!output/reports/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
