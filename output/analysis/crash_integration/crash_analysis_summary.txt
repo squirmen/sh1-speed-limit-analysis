@@ -1,0 +1,21 @@
+================================================================================
+CRASH ANALYSIS INTEGRATION - SUMMARY REPORT
+================================================================================
+
+Analysis Date: 2025-10-22 10:35:29
+Speed Limit Change: April 13, 2025 (100 → 110 km/h)
+Location: SH1 Christchurch (Addison to Rollston)
+
+Total Crashes Analyzed: 26
+  BEFORE: 11
+  AFTER: 15
+
+Severity Breakdown:
+  Non-Injury Crash: 15
+  Minor Crash: 10
+  Serious Crash: 1
+
+Generated Files:
+  - crash_rates_by_period.csv
+  - temporal_patterns.csv
+  - crash_spatial_analysis.csv

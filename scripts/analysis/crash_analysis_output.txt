@@ -1,0 +1,34 @@
+================================================================================
+CRASH DATA INTEGRATION ANALYSIS
+================================================================================
+Speed limit change date: 2025-04-13
+================================================================================
+
+📂 Loading crash data...
+   Total crashes: 26
+   Date range: 2025-01-27 00:00:00 to 2025-07-07 00:00:00
+   BEFORE speed change: 11
+   AFTER speed change: 15
+   Severity: {'Non-Injury Crash': 15, 'Minor Crash': 10, 'Serious Crash': 1}
+
+📂 Loading crash vehicle data...
+   Vehicle records: 56
+   Vehicles per crash: 2.2 avg
+Traceback (most recent call last):
+  File "/Volumes/T7/Data/connected_vehicle_data/scripts/analysis/crash_analysis_integration.py", line 466, in <module>
+    analyzer.run_all_analyses()
+  File "/Volumes/T7/Data/connected_vehicle_data/scripts/analysis/crash_analysis_integration.py", line 444, in run_all_analyses
+    self.load_vehicle_data()
+  File "/Volumes/T7/Data/connected_vehicle_data/scripts/analysis/crash_analysis_integration.py", line 98, in load_vehicle_data
+    df_vehicle = df_vehicle.merge(
+  File "/Users/timwelch/Dropbox/Files/Research/Compass_Data/PythonProject1/.venv/lib/python3.9/site-packages/pandas/core/frame.py", line 10859, in merge
+    return merge(
+  File "/Users/timwelch/Dropbox/Files/Research/Compass_Data/PythonProject1/.venv/lib/python3.9/site-packages/pandas/core/reshape/merge.py", line 170, in merge
+    op = _MergeOperation(
+  File "/Users/timwelch/Dropbox/Files/Research/Compass_Data/PythonProject1/.venv/lib/python3.9/site-packages/pandas/core/reshape/merge.py", line 794, in __init__
+    ) = self._get_merge_keys()
+  File "/Users/timwelch/Dropbox/Files/Research/Compass_Data/PythonProject1/.venv/lib/python3.9/site-packages/pandas/core/reshape/merge.py", line 1311, in _get_merge_keys
+    left_keys.append(left._get_label_or_level_values(lk))
+  File "/Users/timwelch/Dropbox/Files/Research/Compass_Data/PythonProject1/.venv/lib/python3.9/site-packages/pandas/core/generic.py", line 1914, in _get_label_or_level_values
+    raise KeyError(key)
+KeyError: 'codedcrashid'

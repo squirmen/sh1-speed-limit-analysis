@@ -1,0 +1,111 @@
+================================================================================
+DRIVING BEHAVIOR ANALYSIS
+================================================================================
+Thresholds:
+  Hard braking: ≥3.0 m/s² deceleration
+  Rapid acceleration: ≥2.5 m/s²
+  Hard steering: ≥15.0°/s heading change
+================================================================================
+
+📂 Loading motorway GPS data...
+   Points: 135,181
+   Trips: 1,127
+   Vehicle types: {'HCV': 81821, 'LCV': 41799, 'CAR': 10949, '?': 612}
+   Periods: {'after': 95462, 'before': 39719}
+   ✅ Data loaded and sorted
+
+🔧 Calculating acceleration metrics...
+   ✅ Calculated 132,499 point transitions
+   Hard braking events: 47
+   Rapid acceleration events: 18
+   Hard steering events: 1,567
+
+================================================================================
+ANALYSIS 1: BEHAVIORAL EVENTS BY PERIOD
+================================================================================
+
+BEFORE Period (n=38,965 transitions):
+  Hard braking: 24 (0.62 per 1000)
+  Rapid acceleration: 14 (0.36 per 1000)
+  Hard steering: 439 (11.27 per 1000)
+  Acceleration stats:
+    Mean: -0.020 m/s²
+    Std Dev: 0.423 m/s²
+    Abs Mean: 0.166 m/s²
+
+AFTER Period (n=93,534 transitions):
+  Hard braking: 23 (0.25 per 1000)
+  Rapid acceleration: 4 (0.04 per 1000)
+  Hard steering: 1,128 (12.06 per 1000)
+  Acceleration stats:
+    Mean: -0.017 m/s²
+    Std Dev: 0.315 m/s²
+    Abs Mean: 0.155 m/s²
+
+================================================================================
+CHANGES (AFTER - BEFORE):
+================================================================================
+  Hard braking rate: -0.37 per 1000
+  Rapid acceleration rate: -0.32 per 1000
+  Hard steering rate: +0.79 per 1000
+  Acceleration variability: -0.011 m/s²
+
+✅ Saved: /Volumes/T7/Data/connected_vehicle_data/output/analysis/behavioral/behavioral_by_period.csv
+
+================================================================================
+ANALYSIS 2: BEHAVIORAL EVENTS BY VEHICLE TYPE
+================================================================================
+
+LCV:
+  Hard braking: 0.85 → 0.55 per 1000 (-0.30)
+  Rapid accel: 0.28 → 0.11 per 1000 (-0.17)
+  Hard steering: 12.45 → 13.43 per 1000 (+0.98)
+
+CAR:
+  Hard braking: 0.00 → 0.16 per 1000 (+0.16)
+  Rapid accel: 0.00 → 0.00 per 1000 (+0.00)
+  Hard steering: 12.12 → 12.51 per 1000 (+0.39)
+
+HCV:
+  Hard braking: 0.60 → 0.12 per 1000 (-0.48)
+  Rapid accel: 0.50 → 0.02 per 1000 (-0.48)
+  Hard steering: 10.41 → 11.33 per 1000 (+0.92)
+
+✅ Saved: /Volumes/T7/Data/connected_vehicle_data/output/analysis/behavioral/behavioral_by_vehicle_type.csv
+
+================================================================================
+ANALYSIS 3: SPEED VARIABILITY
+================================================================================
+
+BEFORE Period (n=344 trips):
+  Speed std dev: 34.49 km/h (mean)
+  Speed range: 97.83 km/h (mean)
+  Coefficient of variation: 0.514
+  Mean absolute acceleration: 0.168 m/s²
+
+AFTER Period (n=783 trips):
+  Speed std dev: 34.63 km/h (mean)
+  Speed range: 97.80 km/h (mean)
+  Coefficient of variation: 0.512
+  Mean absolute acceleration: 0.155 m/s²
+
+================================================================================
+CHANGES (AFTER - BEFORE):
+================================================================================
+  Speed std dev: +0.13 km/h
+  Speed range: -0.03 km/h
+  Speed CV: -0.002
+  Mean abs accel: -0.013 m/s²
+
+✅ Saved: /Volumes/T7/Data/connected_vehicle_data/output/analysis/behavioral/speed_variability.csv
+
+================================================================================
+BEHAVIORAL ANALYSIS COMPLETE
+================================================================================
+Output directory: /Volumes/T7/Data/connected_vehicle_data/output/analysis/behavioral
+
+Generated files:
+  1. behavioral_by_period.csv
+  2. behavioral_by_vehicle_type.csv
+  3. speed_variability.csv
+================================================================================

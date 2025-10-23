@@ -1,0 +1,20 @@
+================================================================================
+VEHICLE TYPE CRASH CORRELATION SUMMARY
+================================================================================
+
+KEY FINDING: Passenger Cars
+--------------------------------------------------------------------------------
+Behavioral changes:
+  - Hard braking: WORSE (+0.16 per 1000)
+  - Hard steering: WORSE (+0.39 per 1000)
+
+Crash involvement:
+  - BEFORE: 11 passenger car vehicles
+  - AFTER: 23 passenger car vehicles
+  - CHANGE: +12 (+109%)
+
+CORRELATION: STRONG POSITIVE
+  Passenger cars showed worse driving behavior AND
+  more than doubled their crash involvement.
+
+================================================================================
